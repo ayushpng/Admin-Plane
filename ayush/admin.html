@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Gym Dashboard</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" id="membersInfoLink"><i class="fas fa-users"></i> Members Info</a></li>
+                <li><a href="#" id="addMemberLink"><i class="fas fa-user-plus"></i> Add Member</a></li>
+                <li><a href="#" id="checkStatusLink"><i class="fas fa-search"></i> Check Status</a></li>
+            </ul>
+        </nav>
+        <section class="members-info">
+            <h2>Members Info</h2>
+            <div id="membersList"></div>
+        </section>
+        <section class="add-member" style="display: none;">
+            <h2>Add Member</h2>
+            <form id="addMemberForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                <label for="age">Age</label>
+                <input type="number" id="age" required>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" required>
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="pack">Pack</label>
+                <select id="pack" required>
+                    <option value="Starter">Starter</option>
+                    <option value="Advance">Advance</option>
+                    <option value="Premium">Premium</option>
+                </select>
+                <label for="registrationDate">Date of Registration</label>
+                <input type="date" id="registrationDate" required>
+                <button type="submit">Add Member</button>
+            </form>
+        </section>
+        <section class="check-status" style="display: none;">
+            <h2>Check Status</h2>
+            <form id="checkStatusForm">
+                <label for="searchName">Member Name</label>
+                <input type="text" id="searchName" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="searchResult"></div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

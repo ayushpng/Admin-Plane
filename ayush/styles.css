@@ -1,0 +1,137 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #333;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+section {
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+.members-info .member, .check-status .member {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.members-info .member p, .check-status .member p {
+    margin: 5px 0;
+}
+
+.delete-button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete-button:hover {
+    background: #c82333;
+}
+
+#searchResult p {
+    font-weight: bold;
+    color: #333;
+}
